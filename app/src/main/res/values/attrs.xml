@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="circleBorderWidth" format="dimension"/>
+    <attr name="circleBorderColor" format="color|reference"/>
+    <attr name="direction">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+
+    <declare-styleable name="AvatarListView">
+        <attr name="circleBorderWidth" />
+        <attr name="circleBorderColor" />
+        <attr name="direction" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarSimpleView">
+        <attr name="circleBorderWidth" />
+        <attr name="circleBorderColor" />
+        <attr name="focusBorderColor" format="color|reference"/>
+        <attr name="avatar" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AvatarView">
+        <attr name="circleBorderWidth" />
+        <attr name="circleBorderColor" />
+        <attr name="onlineSrc" format="reference"/>
+        <attr name="offlineSrc" format="reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="x_radius" format="dimension"/>
+        <attr name="y_radius" format="dimension"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color|reference"/>
+        <attr name="focusable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="colorTick" format="color"/>
+        <attr name="colorChecked" format="color"/>
+        <attr name="colorUnchecked" format="color"/>
+        <attr name="colorUncheckedStroke" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <!--阴影半径-->
+        <attr name="shadow_radius" format="reference|dimension"/>
+        <!--阴影偏移-->
+        <attr name="shadow_offset" format="reference|dimension"/>
+        <!--阴影颜色-->
+        <attr name="shadow_color" format="reference|color"/>
+        <!--关闭颜色-->
+        <attr name="uncheck_color" format="reference|color"/>
+        <!--开启颜色-->
+        <attr name="checked_color" format="reference|color"/>
+
+        <!--边框宽度-->
+        <attr name="border_width" format="reference|dimension"/>
+        <!--开启指示器颜色-->
+        <attr name="checkline_color" format="reference|color"/>
+        <!--开启指示器线宽-->
+        <attr name="checkline_width" format="reference|dimension"/>
+        <!--关闭指示器颜色-->
+        <attr name="uncheckcircle_color" format="reference|color"/>
+        <!--关闭指示器线宽-->
+        <attr name="uncheckcircle_width" format="reference|dimension"/>
+        <!--关闭指示器半径-->
+        <attr name="uncheckcircle_radius" format="reference|dimension"/>
+
+        <!--是否选中-->
+        <attr name="checked" format="reference|boolean"/>
+        <!--是否启用阴影-->
+        <attr name="shadow_effect" format="reference|boolean"/>
+        <!--动画时间，默认300ms-->
+        <attr name="effect_duration" format="reference|integer"/>
+        <!--按钮颜色-->
+        <attr name="button_color" format="reference|color"/>
+        <!--是否显示指示器，默认true：显示-->
+        <attr name="show_indicator" format="reference|boolean"/>
+        <!--背景色，默认白色-->
+        <attr name="background_color" format="reference|color"/>
+        <!--是否启用特效，默认true-->
+        <attr name="enable_effect" format="reference|boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="GradientProgressBar">
+        <attr name="bgColor" format="color|reference"/>
+        <attr name="progressColor" format="color|reference"/>
+        <attr name="gradientColor" format="color|reference"/>
+        <attr name="max" format="integer|reference"/>
+        <attr name="progress" format="integer|reference"/>
+    </declare-styleable>
+</resources>

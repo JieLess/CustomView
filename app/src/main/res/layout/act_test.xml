@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <com.jw.testdemo.AvatarListView
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        custom:circleBorderColor="@android:color/white"
+        custom:circleBorderWidth="2dp"
+        custom:direction="left">
+
+        <requestFocus />
+    </com.jw.testdemo.AvatarListView>
+
+    <com.jw.testdemo.AvatarListView
+        android:id="@+id/avatar2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        custom:circleBorderColor="@android:color/white"
+        custom:circleBorderWidth="2dp"
+        custom:direction="right" />
+
+    <com.jw.testdemo.RoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="center"
+        android:src="@drawable/headshow1"
+        custom:x_radius="30dp"
+        custom:y_radius="30dp"
+        custom:focusable="true"/>
+
+    <!--<com.jw.testdemo.RoundImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/headshow1"
+        android:scaleType="center"
+        custom:x_radius="30dp"
+        custom:y_radius="30dp"
+        android:layout_margin="5dp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jw.testdemo.AvatarView
+            android:id="@+id/avatar4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            custom:circleBorderWidth="2dp"
+            android:focusable="true"/>
+
+        <com.jw.testdemo.AvatarSimpleView
+            android:id="@+id/avatar5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            custom:circleBorderWidth="3dp"
+            android:focusable="true"
+            android:layout_centerInParent="true"/>
+
+        <com.jw.testdemo.AvatarView
+            android:id="@+id/avatar3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            custom:circleBorderColor="@android:color/white"
+            custom:circleBorderWidth="2dp"
+            custom:offlineSrc="@drawable/offline"
+            custom:onlineSrc="@drawable/online"
+            custom:textColor="@android:color/black"
+            custom:textSize="14sp"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jw.testdemo.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            custom:colorChecked="@color/colorAccent"
+            custom:colorTick="@android:color/white"
+            custom:colorUnchecked="@color/colorPrimaryDark"
+            custom:colorUncheckedStroke="@color/colorAccent"
+            custom:strokeWidth="3dp" />
+
+        <com.jw.testdemo.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            custom:colorChecked="#447eeb"
+            custom:colorTick="@android:color/white"
+            custom:colorUnchecked="@color/colorPrimaryDark"
+            custom:colorUncheckedStroke="#447eeb"
+            custom:strokeWidth="3dp" />
+
+        <com.jw.testdemo.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            custom:colorChecked="#149A45"
+            custom:colorTick="@android:color/white"
+            custom:colorUnchecked="@color/colorPrimaryDark"
+            custom:colorUncheckedStroke="#149A45"
+            custom:strokeWidth="3dp" />
+
+        <com.jw.testdemo.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            custom:colorUnchecked="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jw.testdemo.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:show_indicator="false"
+            custom:checked="true"
+            android:layout_margin="5dp"
+            custom:border_width="3dp"/>
+
+        <com.jw.testdemo.SwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:checked_color="#fdc951"
+            android:layout_margin="5dp"/>
+
+        <com.jw.testdemo.SwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:button_color="#db99c7"
+            custom:shadow_color="#A36F95"
+            custom:background_color="#FFF"
+            custom:checkline_color="#a5dc88"
+            custom:checked_color="#A36F95"
+            custom:uncheckcircle_color="#A36F95"
+            android:layout_margin="5dp"/>
+
+        <com.jw.testdemo.SwitchButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            custom:show_indicator="false"
+
+            custom:checkline_color="@android:color/black"
+            custom:uncheck_color="@android:color/holo_red_light"
+            custom:checked_color="@android:color/holo_green_light"
+            custom:uncheckcircle_color="@android:color/holo_purple"/>
+
+    </LinearLayout>
+
+    <com.jw.testdemo.GradientProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        custom:bgColor="@android:color/darker_gray"
+        custom:progressColor="#ffa500"
+        custom:gradientColor="#ff00ff"
+        custom:max="100"
+        custom:progress="100"/>
+
+
+</LinearLayout>
