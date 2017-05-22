@@ -7,7 +7,7 @@
 
 ## Screenshot
 
-<img width="200" height=“300” src="https://github.com/JieLess/CustomView/blob/master/gif/demo.png"></img>
+<img width="410" height=“630” src="https://github.com/JieLess/CustomView/blob/master/gif/demo.png"></img>
 
 ## License
 ```
